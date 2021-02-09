@@ -1,7 +1,5 @@
 ## Matlab - research
 
-### research:
-
 #### Point Cloud - resources:
 
 - Measure and analyze a 3D scene using point clouds:
@@ -35,3 +33,23 @@ https://www.mathworks.com/help/vision/ref/pcread.html
 https://github.com/pglira/Point_cloud_tools_for_Matlab
 
 <br /><br />
+
+### Research - Point Cloud:
+
+- source: https://uk.mathworks.com/help/matlab/ref/fscanf.html
+
+```
+fileID = fopen('points-170.txt','r');
+formatSpec = '%f';
+sizeA = [3 Inf];
+A = fscanf(fileID,formatSpec,sizeA);
+A=A';
+size(A);
+plot3(A(:,1),A(:,2),A(:,3));
+plot3(A(:,1),A(:,2),A(:,3),'or');
+plot3(A(:,1),A(:,2),A(:,3),'LineStyle','none');
+```
+
+![effect...](/images/.jpg)
+
+- ...
