@@ -2,8 +2,34 @@
 
 #### Point Cloud - resources:
 
-- Measure and analyze a 3D scene using point clouds:
-https://www.mathworks.com/discovery/point-cloud.html
+### Measure and analyze a 3D scene using point clouds: 
+- https://www.mathworks.com/discovery/point-cloud.html
+
+Measure and analyze a 3D scene using point clouds:
+
+A point cloud is a collection of data points where the individual points of the dataset represent the coordinates for surface points of the objects being scanned in the real world. Point clouds are used to measure real-world scenes and are commonly produced by lidar scanners and other devices. Point cloud processing is used for augmented reality (AR) and virtual reality (VR) applications and for perception and navigation in robotics and automated driving.
+
+Common point cloud processing tasks include:
+- Reading and writing point cloud data for analysis and display
+- Transforming, filtering, and registering 3D point clouds
+- Segmenting 3D point clouds into clusters and fitting them to geometric shapes
+
+The major components for a point cloud processing workflow are:
+- Reading and visualizing the data
+- Registering and stitching a series of point clouds
+- Segmenting point cloud data into clusters
+
+#### Registering and stitching a series of point clouds example: 3D reconstruction of a scene using the iterative closest point (ICP) algorithm.
+
+Links: 
+- https://pointclouds.org/documentation/tutorials/hdl_grabber.html
+- https://velodynelidar.com/
+- https://data.kitware.com/#collection/5b7f46f98d777f06857cb206
+- https://pointclouds.org/
+ 
+#### Segmenting point cloud data into clusters example: organized lidar data that is segmented into clusters. The points in black represent ground points, and the colored points represent potential obstacles.
+
+***
 
 - view - Display point cloud:
 https://www.mathworks.com/help/vision/ref/pcplayer.view.html
@@ -49,3 +75,5 @@ plot3(A(:,1),A(:,2),A(:,3),'or');
 ```
 ![plot3(A(:,1),A(:,2),A(:,3),'or')](/images/fig-points-example.png)
 - ...
+
+
