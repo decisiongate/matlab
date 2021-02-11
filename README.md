@@ -45,11 +45,7 @@ sizeA = [3 Inf];
 A = fscanf(fileID,formatSpec,sizeA);
 A=A';
 size(A);
-plot3(A(:,1),A(:,2),A(:,3));
 plot3(A(:,1),A(:,2),A(:,3),'or');
-plot3(A(:,1),A(:,2),A(:,3),'LineStyle','none');
 ```
-
-![effect...](/images/.jpg)
-
+![plot3(A(:,1),A(:,2),A(:,3),'or')](/images/fig-points-example.png)
 - ...
