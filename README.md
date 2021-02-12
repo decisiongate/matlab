@@ -1,26 +1,24 @@
-## Matlab - research
+# MATLAB - research - Point Cloud:
 
-### Point Cloud - resources:
+***
 
-### Measure and analyze a 3D scene using point clouds: 
-- https://www.mathworks.com/discovery/point-cloud.html
+## 1. Measure and analyze a 3D scene using point clouds: 
+- source: https://www.mathworks.com/discovery/point-cloud.html
 
-Measure and analyze a 3D scene using point clouds:
-
-A point cloud is a collection of data points where the individual points of the dataset represent the coordinates for surface points of the objects being scanned in the real world. 
+A point cloud is a collection of data points where the individual points of the dataset represent the ** coordinates for surface points** of the objects being scanned in the real world. 
 Point clouds are used to measure real-world scenes and are commonly produced by lidar scanners and other devices. Point cloud processing is used for augmented reality (AR) and virtual reality (VR) applications and for perception and navigation in robotics and automated driving.
 
-Common point cloud processing tasks include:
+** Common point cloud processing tasks include: **
 - Reading and writing point cloud data for analysis and display
 - Transforming, filtering, and registering 3D point clouds
 - Segmenting 3D point clouds into clusters and fitting them to geometric shapes
 
-The major components for a point cloud processing workflow are:
+** The major components for a point cloud processing workflow are: **
 - Reading and visualizing the data
 - Registering and stitching a series of point clouds
 - Segmenting point cloud data into clusters
 
-#### Registering and stitching a series of point clouds example: 3D reconstruction of a scene using the iterative closest point (ICP) algorithm.
+### Registering and stitching a series of point clouds example: 3D reconstruction of a scene using the iterative closest point (ICP) algorithm.
 
 Links: 
 - https://pointclouds.org/documentation/tutorials/hdl_grabber.html
@@ -30,7 +28,7 @@ Links:
 - https://github.com/pglira/Point_cloud_tools_for_Matlab
 - https://drive.matlab.com/files/
 
-#### Segmenting point cloud data into clusters example: organized lidar data that is segmented into clusters. The points in black represent ground points, and the colored points represent potential obstacles.
+### Segmenting point cloud data into clusters example: organized lidar data that is segmented into clusters. The points in black represent ground points, and the colored points represent potential obstacles.
 
 ***
 
@@ -78,12 +76,3 @@ plot3(A(:,1),A(:,2),A(:,3),'or');
 ```
 ![plot3(A(:,1),A(:,2),A(:,3),'or')](/images/fig-points-example.png)
 - ...
-
-
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
