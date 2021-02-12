@@ -1,13 +1,14 @@
 ## Matlab - research
 
-#### Point Cloud - resources:
+### Point Cloud - resources:
 
 ### Measure and analyze a 3D scene using point clouds: 
 - https://www.mathworks.com/discovery/point-cloud.html
 
 Measure and analyze a 3D scene using point clouds:
 
-A point cloud is a collection of data points where the individual points of the dataset represent the coordinates for surface points of the objects being scanned in the real world. Point clouds are used to measure real-world scenes and are commonly produced by lidar scanners and other devices. Point cloud processing is used for augmented reality (AR) and virtual reality (VR) applications and for perception and navigation in robotics and automated driving.
+A point cloud is a collection of data points where the individual points of the dataset represent the coordinates for surface points of the objects being scanned in the real world. 
+Point clouds are used to measure real-world scenes and are commonly produced by lidar scanners and other devices. Point cloud processing is used for augmented reality (AR) and virtual reality (VR) applications and for perception and navigation in robotics and automated driving.
 
 Common point cloud processing tasks include:
 - Reading and writing point cloud data for analysis and display
@@ -79,3 +80,10 @@ plot3(A(:,1),A(:,2),A(:,3),'or');
 - ...
 
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
