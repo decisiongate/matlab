@@ -5,20 +5,43 @@
 ## 1. Measure and analyze a 3D scene using point clouds: 
 - source: https://www.mathworks.com/discovery/point-cloud.html
 
-A point cloud is a collection of data points where the individual points of the dataset represent the ** coordinates for surface points** of the objects being scanned in the real world. 
-Point clouds are used to measure real-world scenes and are commonly produced by lidar scanners and other devices. Point cloud processing is used for augmented reality (AR) and virtual reality (VR) applications and for perception and navigation in robotics and automated driving.
+A point cloud is a collection of data points where the individual points of the dataset represent the *coordinates for surface points* of the objects being scanned in the real world. 
 
-** Common point cloud processing tasks include: **
+Point clouds are used to measure real-world scenes and are commonly produced by lidar scanners and other devices. 
+
+Point cloud processing is used for augmented reality (AR) and virtual reality (VR) applications and for perception and navigation in robotics and automated driving.
+
+**Common point cloud processing tasks include:**
 - Reading and writing point cloud data for analysis and display
 - Transforming, filtering, and registering 3D point clouds
 - Segmenting 3D point clouds into clusters and fitting them to geometric shapes
 
-** The major components for a point cloud processing workflow are: **
+**The major components for a point cloud processing workflow are:**
 - Reading and visualizing the data
 - Registering and stitching a series of point clouds
 - Segmenting point cloud data into clusters
 
-### Registering and stitching a series of point clouds example: 3D reconstruction of a scene using the iterative closest point (ICP) algorithm.
+### 1.1 Registering and stitching a series of point clouds example: 3D reconstruction of a scene using the iterative closest point (ICP) algorithm:
+- source: https://uk.mathworks.com/help/vision/ref/velodynefilereader.html
+
+Topics - links:
+- Lidar Toolbox Supported Hardware (Lidar Toolbox): 
+https://uk.mathworks.com/help/lidar/supported-hardware.html
+- Velodyne LiDAR Sensors Data Acquisition (Lidar Toolbox Support Package for Velodyne LiDAR Sensors):  
+https://uk.mathworks.com/help/supportpkg/velodynelidar/lidar-sensors-data-acquisition.html
+- Build a Map from Lidar Data (Automated Driving Toolbox): 
+https://uk.mathworks.com/help/driving/ug/build-a-map-from-lidar-data.html
+
+
+### 1.2 Segmenting point cloud data into clusters example: organized lidar data that is segmented into clusters. The points in black represent ground points, and the colored points represent potential obstacles:
+
+[...]
+
+### 1.3 Segmenting point cloud data into clusters example: organized lidar data that is segmented into clusters. The points in black represent ground points, and the colored points represent potential obstacles:
+
+[...]
+
+***
 
 Links: 
 - https://pointclouds.org/documentation/tutorials/hdl_grabber.html
@@ -27,8 +50,6 @@ Links:
 - https://pointclouds.org/
 - https://github.com/pglira/Point_cloud_tools_for_Matlab
 - https://drive.matlab.com/files/
-
-### Segmenting point cloud data into clusters example: organized lidar data that is segmented into clusters. The points in black represent ground points, and the colored points represent potential obstacles.
 
 ***
 
