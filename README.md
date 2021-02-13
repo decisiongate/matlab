@@ -25,7 +25,7 @@ Point cloud processing is used for augmented reality (AR) and virtual reality (V
 - source: https://uk.mathworks.com/help/vision/ref/velodynefilereader.html
 
 ```
-veloReader = velodyneFileReader('HDL32-V2_Tunnel.pcap','HDL32E');
+veloReader = velodyneFileReader('lidarData_ConstructionRoad.pcap','HDL32E');
 xlimits = [-60 60];
 ylimits = [-60 60];
 zlimits = [-20 20];
@@ -40,6 +40,7 @@ while(hasFrame(veloReader) && player.isOpen())
     pause(0.1);
 end
 ```
+![plot3(A(:,1),A(:,2),A(:,3),'or')](/images/fig-lidarData_ConstructionRoad.pcap.png)
 
 
 Topics - links:
