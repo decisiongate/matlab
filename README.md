@@ -24,6 +24,24 @@ Point cloud processing is used for augmented reality (AR) and virtual reality (V
 ### 1.1 Registering and stitching a series of point clouds example: 3D reconstruction of a scene using the iterative closest point (ICP) algorithm:
 - source: https://uk.mathworks.com/help/vision/ref/velodynefilereader.html
 
+```
+veloReader = velodyneFileReader('HDL32-V2_Tunnel.pcap','HDL32E');
+xlimits = [-60 60];
+ylimits = [-60 60];
+zlimits = [-20 20];
+player = pcplayer(xlimits,ylimits,zlimits);
+xlabel(player.Axes,'X (m)');
+ylabel(player.Axes,'Y (m)');
+zlabel(player.Axes,'Z (m)');
+veloReader.CurrentTime = veloReader.StartTime + seconds(0.3); 
+while(hasFrame(veloReader) && player.isOpen())
+    ptCloudObj = readFrame(veloReader);
+    view(player,ptCloudObj.Location,ptCloudObj.Intensity);
+    pause(0.1);
+end
+```
+
+
 Topics - links:
 - Lidar Toolbox Supported Hardware (Lidar Toolbox): 
 https://uk.mathworks.com/help/lidar/supported-hardware.html
