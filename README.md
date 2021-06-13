@@ -101,7 +101,7 @@ https://github.com/pglira/Point_cloud_tools_for_Matlab
 
 <br /><br />
 
-### Research - Point Cloud:
+### Research - Point Cloud (for recognition and classification):
 
 - source: https://uk.mathworks.com/help/matlab/ref/fscanf.html
 
